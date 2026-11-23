@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garage Academy</title>
+<meta name="description" content="Thirty weeks inside a working salon in San Pedro Alcántara. Styling first, cutting later, one student at a time, your first paying guest on the Garage floor around week 7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#1A1614; --cream:#F7F3EE; --offwhite:#FAF8F5;
+    --gold:#C4A265; --rose:#B8877A; --brown:#8B7355;
+    --bg:var(--black); --fg:var(--offwhite); --muted:#B9B0A6; --line:rgba(247,243,238,.14);
+    --panel:#211C19;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,sans-serif;font-weight:300;line-height:1.6;font-size:17px}
+  h1,h2,h3{font-family:"Outfit",system-ui,sans-serif;font-weight:200;line-height:1.1;margin:0}
+  h1{font-size:clamp(2.6rem,10vw,5.5rem);letter-spacing:-.01em}
+  h2{font-size:clamp(1.7rem,6vw,2.6rem);margin-bottom:1.25rem}
+  h3{font-size:1.25rem;font-weight:300;color:var(--gold);margin-bottom:.4rem}
+  p{margin:0 0 1rem}
+  a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(196,162,101,.4)}
+  a:hover{border-bottom-color:var(--gold)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px}
+  @media(min-width:900px){.wrap{padding:0 32px}}
+  header{padding:22px 0 0}
+  .brand{font-family:"Outfit";font-weight:300;letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:var(--muted)}
+  .hero{padding:16vh 0 12vh}
+  .hero .tag{color:var(--gold);font-family:"Outfit";font-weight:300;font-size:1.05rem;letter-spacing:.02em;margin:1.4rem 0 1.2rem}
+  .hero p.lead{font-size:1.15rem;max-width:48ch}
+  @media(min-width:900px){.hero p.lead{font-size:1.25rem}}
+  section{padding:3.5rem 0;border-top:1px solid var(--line)}
+  .grid{display:grid;gap:1.25rem}
+  @media(min-width:640px){.grid.two{grid-template-columns:1fr 1fr}}
+  .mods{counter-reset:m;display:grid;gap:0}
+  .mod{display:grid;grid-template-columns:3rem 1fr;gap:.75rem;padding:1.1rem 0;border-top:1px solid var(--line)}
+  .mod:last-child{border-bottom:1px solid var(--line)}
+  .mod .n{font-family:"Outfit";font-weight:200;font-size:2rem;color:var(--brown);line-height:1}
+  .mod .w{color:var(--muted);font-size:.9rem}
+  ul{padding-left:1.1rem;margin:0 0 1rem}
+  li{margin:.35rem 0}
+  .plain{background:var(--panel);border-left:2px solid var(--rose);padding:1rem 1.1rem;margin:1.5rem 0;color:var(--fg)}
+  .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin:1.5rem 0}
+  @media(min-width:640px){.facts{grid-template-columns:repeat(4,1fr)}}
+  .fact{background:var(--bg);padding:1rem .9rem}
+  .fact b{display:block;font-family:"Outfit";font-weight:200;font-size:1.9rem;color:var(--gold);line-height:1.1}
+  .fact span{font-size:.85rem;color:var(--muted)}
+  .price{font-family:"Outfit";font-weight:200;font-size:2.2rem;color:var(--fg);margin:.2rem 0}
+  .price small{font-family:"DM Sans";font-weight:300;font-size:.95rem;color:var(--muted);display:block;margin-top:.2rem}
+  .cta{display:inline-block;margin-top:1rem;padding:.9rem 1.4rem;border:1px solid var(--gold);color:var(--gold);font-family:"Outfit";font-weight:300;letter-spacing:.06em;border-bottom:1px solid var(--gold)}
+  .cta:hover{background:var(--gold);color:var(--black)}
+  footer{padding:3rem 0 4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  footer .sig{font-family:"Outfit";font-weight:300;letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;color:var(--rose);margin-top:1.5rem}
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){--bg:var(--black)} /* page stays dark by design, matches the room */
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="brand">Garage Hair Club</div></header>
+
+  <div class="hero">
+    <h1>Garage<br>Academy</h1>
+    <p class="tag">The whole trade. One chair. Thirty weeks.</p>
+    <p class="lead">Inside a working salon in San Pedro Alcántara. For stylists who already charge for their work and never had anyone behind them. One student at a time. Your first paying guest on the Garage floor around week 7.</p>
+  </div>
+
+  <section id="who">
+    <h2>Who it is for</h2>
+    <p>You already work with hair. Freelance, mobile, assisting, a chair at home. You charge for it, and people come back.</p>
+    <p>What you have, you built on your own. Nobody stood behind you and moved your hand. So the blow-dry holds on one head and drops on the next, and you cannot always say why. A guest asks for colour and you send her somewhere else, or you do the one formula you trust. Nobody who cuts for a living has checked your cut.</p>
+    <p>Garage Academy is the floor under what you already do. The reason behind every move. The services you say no to today. And a stylist within arm's reach who sees it before the guest does.</p>
+  </section>
+
+  <section id="worth">
+    <h2>What the hair you send away is worth</h2>
+    <p>The services you turn down today have a price on the Garage menu.</p>
+    <div class="facts">
+      <div class="fact"><b>235</b><span>extensions re-install</span></div>
+      <div class="fact"><b>240</b><span>full colour and cut</span></div>
+      <div class="fact"><b>260</b><span>half head foils</span></div>
+      <div class="fact"><b>340</b><span>full head foils and cut</span></div>
+    </div>
+    <p>One guest on half head foils every eight weeks is six visits a year. From one head, 1 560. By week 10 the extensions are yours to do. By week 16 the colour. By week 24 the foils, and the cut that goes with them.</p>
+  </section>
+
+  <section id="how">
+    <h2>Built around your first paying guest</h2>
+    <div class="facts">
+      <div class="fact"><b>30</b><span>weeks</span></div>
+      <div class="fact"><b>3</b><span>fixed days a week</span></div>
+      <div class="fact"><b>wk 7</b><span>first paying guest on the Garage floor</span></div>
+      <div class="fact"><b>1:1</b><span>one student in the room</span></div>
+    </div>
+    <p>Schools start with cutting and the student sells nothing for months. We start with what you can sell soonest. Each step ends with a floor pass: the right to sell that service on the Academy chair, at a student price list, with your Lead Educator in the room.</p>
+    <div class="mods">
+      <div class="mod"><div class="n">1</div><div><h3>Styling and care</h3><div class="w">Weeks 1 to 6</div><p>Blow-dry, tongs, braids, updos, Oribe treatments, the Garage consultation. Floor pass: blow-dry, styling, treatments.</p></div></div>
+      <div class="mod"><div class="n">2</div><div><h3>Extensions</h3><div class="w">Weeks 7 to 10</div><p>Tape and weft on Eloré hair, colour match, removal, care. Scissors come in here. Floor pass: extensions.</p></div></div>
+      <div class="mod"><div class="n">3</div><div><h3>Colour I</h3><div class="w">Weeks 11 to 16</div><p>Wella numbering, mixing, gloss, toner, root colour. Floor pass: gloss, toner, root colour.</p></div></div>
+      <div class="mod"><div class="n">4</div><div><h3>Cutting</h3><div class="w">Weeks 17 to 23</div><p>Gents, one-length, layers, fringe, dry cutting. Floor pass: gents cut, trim, one-length.</p></div></div>
+      <div class="mod"><div class="n">5</div><div><h3>Colour II and cutting II</h3><div class="w">Weeks 24 to 28</div><p>Foils, lightener, graduated and layered cuts. Floor pass: face frame, half head, layered cut.</p></div></div>
+      <div class="mod"><div class="n">6</div><div><h3>Floor week and final</h3><div class="w">Weeks 29 to 30</div><p>A full week on the chair, door to till. Portfolio shoot. Final day.</p></div></div>
+    </div>
+    <p style="margin-top:1.25rem">Three fixed days a week, 10:00 to 17:30. The other days stay yours, with your own guests. Each step has repetitions to log before you move on. Every technique goes on a practice head first, then a model, then a guest with a stylist next to you.</p>
+  </section>
+
+  <section id="counted">
+    <h2>The thirty weeks, counted</h2>
+    <div class="facts">
+      <div class="fact"><b>630</b><span>hours in the salon</span></div>
+      <div class="fact"><b>65</b><span>hours with Antoine</span></div>
+      <div class="fact"><b>320</b><span>hours at a Lead Educator's side</span></div>
+      <div class="fact"><b>245</b><span>hours of your own practice, checked weekly</span></div>
+    </div>
+    <p>Around 100 of those hours are on the floor from week 7, with paying guests in your chair. Logged before you move on: 40 blow-dries, 8 tape installs, 30 colour mixes, 15 root colours, 30 cutting heads, 15 gents cuts on live guests. Among others. Every demonstration filmed, yours to watch again.</p>
+  </section>
+
+  <section id="team">
+    <h2>Who teaches</h2>
+    <p>One Garage stylist owns each subject, your Lead Educator for that step: styling, extensions, colour, cutting. You are their second pair of hands on their guests, you practise in the gaps, and they review your log every week.</p>
+    <p>Antoine designed the program, opens each step with a demonstration day and closes it with the assessment.</p>
+  </section>
+
+  <section id="own">
+    <h2>Your own guests, in Garage</h2>
+    <p>From your first floor pass you can bring your own guests into Garage on the Academy chair, for the services you have passed, with your Lead Educator in the room. You invoice. Your list of guests grows inside Garage from week 7.</p>
+  </section>
+
+  <section id="assessment">
+    <h2>Assessment</h2>
+    <p>A weekly review of your log with your Lead Educator. A floor pass at the end of each step, signed by two of us. A final day in week 30: four services on four models, scored independently by two of us.</p>
+  </section>
+
+  <section id="get">
+    <h2>What you get</h2>
+    <div class="grid two">
+      <ul>
+        <li>A place on the Garage floor when you finish. Employed, or on your own chair, if you want it.</li>
+        <li>Four trades in thirty weeks: styling, extensions, colour and cutting. Each one charged for before you leave.</li>
+        <li>Your own guests on the Academy chair from your first floor pass. You invoice.</li>
+        <li>A list of guests that has been growing inside Garage since week 7. Yours.</li>
+      </ul>
+      <ul>
+        <li>The demo library, every technique on film, yours to keep.</li>
+        <li>A portfolio shoot in the room, cleared for your own Instagram.</li>
+        <li>Your tools: scissors, clippers, brushes, dryer, tongs. Yours to keep.</li>
+        <li>Wella and Oribe kit, practice heads, days with the brand reps, the brands' education modules.</li>
+        <li>Insurance while you train. Nothing to arrange on your side.</li>
+        <li>The Garage Academy certificate, every step passed, every hour logged per competence unit.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="price">
+    <h2>Price</h2>
+    <div class="price">11 900 EUR <small>ex IVA, for thirty weeks, one to one. IVA treatment confirmed in writing before you sign.</small></div>
+    <p>Everything you need for the thirty weeks is in it: your tools, your kit, the practice heads, insurance while you train, the portfolio day, the demo library, the certificate and the hour log.</p>
+    <p>Thirty weeks at an academy in London costs 16 500 to 17 700 pounds, in a classroom, with the educator shared across the room. Here the class is you.</p>
+    <p>1 900 on signing. The rest on day one.</p>
+  </section>
+
+  <section id="apply">
+    <h2>Apply</h2>
+    <p>Ten minutes on your phone. Then one hour at the salon: a conversation, a blow-dry, some sectioning. We decide within three working days, and tell you why.</p>
+    <p>Next start 4 January 2027.</p>
+    <a class="cta" href="https://wa.me/34658897787?text=Garage%20Academy%20application">WhatsApp the salon</a>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.95rem">Or message <a href="https://ig.me/m/garagehairclub">@garagehairclub</a> on Instagram.</p>
+  </section>
+
+  <footer>
+    <p>Garage Hair Club<br>Av. de Barcelona 8, San Pedro Alcántara, Marbella<br>Mon to Sat, 10:00 to 18:30<br><a href="https://garagegroup.es">garagegroup.es</a></p>
+    <p>Garage Academy is run by Garage 01, S.L. (NIF B26892158).</p>
+    <div class="sig">Raw. Refined. You.</div>
+  </footer>
+</div>
+</body>
+</html>
